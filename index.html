@@ -71,7 +71,6 @@
 			justify-content: flex-start;
 			align-items: center;
 			color: black;
-			height: 100%;
 			width: 100%;
 		}
 		#menu ul {
@@ -94,12 +93,10 @@
 			color: white;
 		}
 		.footer {
-			box-sizing: border-box;
 			width: 100%;
-			height: auto;
-			margin-top: auto;
 			text-align: center;
-			padding: 10px;
+			margin-top: auto;
+			margin-bottom: 30px;
 		}
 		.footer p {
 			margin-bottom: 5px;
@@ -116,6 +113,7 @@
 
 		/*RIGHT COLUMN (CONTENT) STYLING START */
 		.right-column {
+			height: 3000px;
 			background-color: #b1c9b7;
 			display: flex;
 			flex-direction: column;
@@ -124,6 +122,7 @@
 			margin-left: 20%;
 		}
 		#image-container {
+			box-sizing: border-box;
 			width: 100%;
 			height: 100vh;
 			display: flex;
@@ -137,16 +136,15 @@
 		/* QUOTE STYLING START */
 		/* Blockquote main style */
 		.blockquote-wrapper {
+			box-sizing: border-box;
 			background-color: #52ACFF;
   			background-image: linear-gradient(90deg, #62676C 60%, #3bd662 100%);
 		   display: flex;
 		   justify-content: center;
 		   align-items: center;
-		   box-sizing: border-box;
 		   height: 100vh;
 		}
 		.blockquote {
-			
 			position: relative;
 			padding: 20px;
 		    font-family: 'Montserat', sans-serif;
@@ -167,7 +165,7 @@
 		}
 
 		/* Blockquote right double quotes */
-		.blockquote:after {
+		/*.blockquote:after {
 		    position: absolute;
 		    content: "”";
 		    color: rgba(255, 255, 255, 1);
@@ -176,7 +174,7 @@
 		    bottom: -15px;
 		    right: 30px;
 		    color: white;
-		}
+		}*/
 
 		/* Blockquote subheader */
 		.blockquote h4 {
@@ -288,14 +286,17 @@
 		/*Back to top button end*/
 
 		/*MEDIA STYLING FOR MOBILE DEVICES START*/
-		@media (max-width: 800px) {
+		@media (max-width: 1000px) {
 			.main-container {
 				flex-direction: column;
 			}
 			.left-column {
-				width: 100%;
+				width: 100vw;
 				height: 100vh;
 				position: relative;
+				padding: 0;
+				margin: 0;
+				border: none;
 			}
 			.right-column {
 				width: 100%;
@@ -305,9 +306,20 @@
 			#image-container {
 				flex-direction: column;
 				width: 100%;
+				height: auto;
 				padding: 0;
+				margin: 0;
+			}
+			#main-image {
+				width: 100%;
+				height: auto;
+				object-fit: cover;
 			}
 			.blockquote-wrapper {
+				width: 100%;
+				height: auto;
+			}
+			.blockquote {
 				width: 100%;
 			}
 			#main-image {
@@ -321,7 +333,6 @@
 <body>
 	<div class="main-container">
 		<div class="left-column">
-			
 			<nav id="menu">
 				<div id="icon-container">
 					<img src="images/small-photo2.jpeg" id="small-photo">
@@ -342,24 +353,24 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<div class="footer">
+			<footer class="footer">
 				<p>&copy Copyright Catalin Gavrila</p>
 				<p>Webdesign by <a href="#portfolio">Catalin Gavrila</a></p>
-			</div>
+			</footer>
 		</div> 
 		<div class="right-column">
-			<div id="image-container">
-				<!-- <div id="quote">“It’s not who you are that holds you back, it’s who you think you’re not.“</div> -->
-				<div class="blockquote-wrapper">
+			abcde
+			<!-- <div id="image-container"> -->
+				<!-- <div class="blockquote-wrapper">
 				  <div class="blockquote">
 				    <h1>
 				      It’s not who you are that holds you back, it’s who you think you’re not.
 				     </h1>
 				    <h4>&mdash;Denis Waitley</h4>
 				  </div>
-				</div>
-				<img src="images/catalin2.jpeg" id="main-image">
-			</div>
+				</div> -->
+				<!-- <img src="images/catalin2.jpeg" id="main-image">
+			</div> -->
 			<section id="about" class="section">
 				<h3 class="section-title">About</h3>
 				<hr class="section-underline">
