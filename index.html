@@ -74,7 +74,7 @@
 			width: 100%;
 		}
 		#menu ul {
-			margin-top: 5%;
+			margin-top: 20%;
 			text-align: center;
 		}
 		#menu ul li {
@@ -96,7 +96,7 @@
 			width: 100%;
 			text-align: center;
 			margin-top: auto;
-			margin-bottom: 30px;
+			margin-bottom: 10px;
 		}
 		.footer p {
 			margin-bottom: 5px;
@@ -113,7 +113,6 @@
 
 		/*RIGHT COLUMN (CONTENT) STYLING START */
 		.right-column {
-			height: 3000px;
 			background-color: #b1c9b7;
 			display: flex;
 			flex-direction: column;
@@ -165,7 +164,7 @@
 		}
 
 		/* Blockquote right double quotes */
-		/*.blockquote:after {
+		.blockquote:after {
 		    position: absolute;
 		    content: "”";
 		    color: rgba(255, 255, 255, 1);
@@ -174,7 +173,7 @@
 		    bottom: -15px;
 		    right: 30px;
 		    color: white;
-		}*/
+		}
 
 		/* Blockquote subheader */
 		.blockquote h4 {
@@ -190,27 +189,33 @@
 		/* QUOTE STYLING END */
 
 		/* SECTIONS STYLING START */
+		.sections-container {
+			width: 90%;
+			align-self: center;
+			margin-top: 20px;
+		}
 		.section {
-			padding: 2% 5%;
+			width: 100%;
 		}
 		.section p {
+			text-align: left;
 			font-size: 1.2em;
 			letter-spacing: 0.2px;
 			line-height: 1.4em;
 		}
 		.section-title {
+			margin-top: 50px;
 			font-size: 2em;
 			color: #26A96C;
 		}
 		.section-underline {
+			margin-top: 10px;
 			width: 50px;
 			border: 3px solid #62676C;
 			margin-bottom: 20px;
 		}
-		#skills-section {
-			margin-top: 10px;
-		}
 		.stats {
+			margin-top: 20px;
 			font-size: 1em;
 			width: 50%;
 			display: flex;
@@ -260,6 +265,16 @@
 		}
 		/* Progress bars end */
 
+		#resume a {
+			color: black;
+		}
+		#resume a:hover {
+			color: green;
+		}
+		#contact {
+			margin-bottom: 50px;
+		}
+
 		/*RIGHT COLUMN (CONTENT) STYLING END */
 
 		/*Back to top button start*/
@@ -291,7 +306,8 @@
 				flex-direction: column;
 			}
 			.left-column {
-				width: 100vw;
+				box-sizing: border-box;
+				width: 100%;
 				height: 100vh;
 				position: relative;
 				padding: 0;
@@ -299,9 +315,12 @@
 				border: none;
 			}
 			.right-column {
+				box-sizing: border-box;
+				align-items: center;
 				width: 100%;
 				margin: 0;
 				padding: 0;
+				border: none;
 			}
 			#image-container {
 				flex-direction: column;
@@ -318,12 +337,18 @@
 			.blockquote-wrapper {
 				width: 100%;
 				height: auto;
+				padding: 20px;
+				background-color: #52ACFF;
+  				background-image: linear-gradient(0deg, #3bd662 50%, #62676C 100%);
 			}
 			.blockquote {
-				width: 100%;
+				width: 90%;
 			}
-			#main-image {
-				width: 100%;
+			.stats {
+				width: 90%;
+			}
+			.meter {
+				width: 90%;
 			}
 		}
 		/*MEDIA STYLING FOR MOBILE DEVICES END*/
@@ -359,81 +384,82 @@
 			</footer>
 		</div> 
 		<div class="right-column">
-			abcde
-			<!-- <div id="image-container"> -->
-				<!-- <div class="blockquote-wrapper">
+			<div id="image-container">
+				<div class="blockquote-wrapper">
 				  <div class="blockquote">
 				    <h1>
 				      It’s not who you are that holds you back, it’s who you think you’re not.
 				     </h1>
 				    <h4>&mdash;Denis Waitley</h4>
 				  </div>
-				</div> -->
-				<!-- <img src="images/catalin2.jpeg" id="main-image">
-			</div> -->
-			<section id="about" class="section">
-				<h3 class="section-title">About</h3>
-				<hr class="section-underline">
-				<p>I am a hardworking and organized person with refined interpersonal skills. My most valuable assets are the ability to adapt to different situations and the willingness to always learn something new, especially through analysis and critical thinking.<br><br>
-				Right now I am trying to switch careers towards a more technical role, but I am also open to customer service related jobs. Even though I am passionate about the field of data analysis, in the past few years I have acquired knowledge in some areas related to IT. I have basic front-end development knowledge, having developed a few static and dynamic websites using HTML, CSS and Javascript. Mobile development is also something that I am familiar with thanks to my previous personal native android apps, developed using Kotlin in Android studio.
-				</p>
-			</section>
-			<section id="skills-section" class="section">
-				<h3 class="section-title">Skills</h3>
-				<hr class="section-underline">
-				<p>I have the following skills at the moment, but looking forward to acquire new ones.</p>
-				<div class="stats">
-					<a href="" class="language">Html</a>
-					<a href="" class="percent">80%</a>
 				</div>
-				<div class="meter">
-					<span style="width: 80%"></span>
-				</div>
-				<div class="stats">
-					<a href="" class="language">CSS</a>
-					<a href="" class="percent">60%</a>
-				</div>
-				<div class="meter">
-					<span style="width: 60%"></span>
-				</div>
-				<div class="stats">
-					<a href="" class="language">Javascript</a>
-					<a href="" class="percent">40%</a>
-				</div>
-				<div class="meter">
-					<span style="width: 40%"></span>
-				</div>
-				<div class="stats">
-					<a href="" class="language">PHP</a>
-					<a href="" class="percent">20%</a>
-				</div>
-				<div class="meter">
-					<span style="width: 20%"></span>
-				</div>
-				<div class="stats">
-					<a href="" class="language">SQL</a>
-					<a href="" class="percent">40%</a>
-				</div>
-				<div class="meter">
-					<span style="width: 40%"></span>
-				</div>	
-			</section>
-			<section id="resume" class="section">
-				<h3 class="section-title">Resume</h3>
-				<hr class="section-underline">
-				<p><a href="https://flowcv.com/resume/1auu8aq70f" target="_BLANK">Here</a> you can access my resume if you want to find out more about me</p>
-			</section>
-			<section id="portfolio" class="section">
-				<h3 class="section-title">Portfolio</h3>
-				<hr class="section-underline">
-				<p>>Section under development<</p>
-			</section>
-			<section id="contact" class="section">
-				<h3 class="section-title">Contact</h3>
-				<hr class="section-underline">
-				<p>E-mail address: gavrila_stefan_catalin@yahoo.com</p>
-				<p>Location: Bucharest, Romania</p>
-				<p>I am also open for remote work.</p>
+				<img src="images/catalin2.jpeg" id="main-image">
+			</div>
+			<section class="sections-container">
+				<section id="about" class="section">
+					<h3 class="section-title">About</h3>
+					<hr class="section-underline">
+					<p>I am a hardworking and organized person with refined interpersonal skills. My most valuable assets are the ability to adapt to different situations and the willingness to always learn something new, especially through analysis and critical thinking.<br><br>
+					Right now I am trying to switch careers towards a more technical role, but I am also open to customer service related jobs. Even though I am passionate about the field of data analysis, in the past few years I have acquired knowledge in some areas related to IT. I have basic front-end development knowledge, having developed a few static and dynamic websites using HTML, CSS and Javascript. Mobile development is also something that I am familiar with thanks to my previous personal native android apps, developed using Kotlin in Android studio.
+					</p>
+				</section>
+				<section id="skills" class="section">
+					<h3 class="section-title">Skills</h3>
+					<hr class="section-underline">
+					<p>I have the following skills at the moment, but looking forward to acquire new ones.</p>
+					<div class="stats">
+						<a href="" class="language">Html</a>
+						<a href="" class="percent">80%</a>
+					</div>
+					<div class="meter">
+						<span style="width: 80%"></span>
+					</div>
+					<div class="stats">
+						<a href="" class="language">CSS</a>
+						<a href="" class="percent">60%</a>
+					</div>
+					<div class="meter">
+						<span style="width: 60%"></span>
+					</div>
+					<div class="stats">
+						<a href="" class="language">Javascript</a>
+						<a href="" class="percent">40%</a>
+					</div>
+					<div class="meter">
+						<span style="width: 40%"></span>
+					</div>
+					<div class="stats">
+						<a href="" class="language">PHP</a>
+						<a href="" class="percent">20%</a>
+					</div>
+					<div class="meter">
+						<span style="width: 20%"></span>
+					</div>
+					<div class="stats">
+						<a href="" class="language">SQL</a>
+						<a href="" class="percent">40%</a>
+					</div>
+					<div class="meter">
+						<span style="width: 40%"></span>
+					</div>	
+				</section>
+				<section id="resume" class="section">
+					<h3 class="section-title">Resume</h3>
+					<hr class="section-underline">
+					<p><a href="https://flowcv.com/resume/1auu8aq70f" target="_BLANK">Here</a> you can access my resume if you want to find out more about me</p>
+				</section>
+				<section id="portfolio" class="section">
+					<h3 class="section-title">Portfolio</h3>
+					<hr class="section-underline">
+					<p>>Section under development<</p>
+				</section>
+				<section id="contact" class="section">
+					<h3 class="section-title">Contact</h3>
+					<hr class="section-underline">
+					<p>E-mail address: gavrila_stefan_catalin@yahoo.com</p>
+					<p>Location: Bucharest, Romania</p>
+					<p>I am also open for remote work.</p>
+				</section>
 			</section>
 		</section>
 		</div>
